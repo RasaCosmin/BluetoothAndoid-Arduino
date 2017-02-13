@@ -1,5 +1,5 @@
 #include <SoftwareSerial.h>
-SoftwareSerial BTserial(0,1);
+SoftwareSerial BTserial(2,3);
 
 char command;
 String str;
@@ -9,7 +9,7 @@ boolean ledon = false;
 void setup() {
   Serial.begin(9600);
   pinMode(led, OUTPUT);
-  BTserial.begin(38400);
+  BTserial.begin(9600);
 }
 
 void loop() {
